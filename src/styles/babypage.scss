@@ -1,0 +1,13 @@
+.header--babypage {
+    background: url(../images/bear-with-child.jpg) no-repeat;
+    background-size: cover;
+}
+.label--babypage, .sidebar--babypage, .nav--babypage {
+    background-color: $babytheme-backgroundcolor;
+}
+.sidebar--babypage {
+    border-right: 1px solid $babytheme-border;
+}
+.sidebar__item--babypage {
+    border-right: 2px solid $babytheme-border;
+}

@@ -1,0 +1,123 @@
+.leading {
+    background: url(../images/bears.jpg) no-repeat;
+    background-position-y: 59%;
+    background-size: cover;
+    
+    &__info {
+        width: 50%;
+        padding-top: 7.5rem;
+        padding-bottom: 9rem;
+        padding-left: 4.36rem;
+    }
+    &__title{
+        font-family: $font-extrabold;
+        font-size: 42px;
+        letter-spacing: 0.6px;
+        line-height: 42px;
+        color: #FFF;
+        margin-top: 16px;
+        margin-bottom: 14px;
+        hyphens: auto;
+    }
+    &__date, &__views{   
+        color: #FFF; 
+    }
+    &__date::before {
+        content: url(../images/calendar-for-hero.svg);
+    }
+    &__views::before {
+        content: url(../images/eye-for-hero.svg);
+    }
+    &__other {
+        display: flex;
+        margin-top: 30px;
+    }
+    &__button {
+        margin-right: 14px;
+    }
+}
+.block {
+    &__wrapper {
+        margin-left: 4.47%;
+        margin-right: 7%;
+        margin-bottom: 3%;
+        position: relative;
+    }
+}
+@media (min-width: 1580px) {
+    .leading__info {
+        width: 48%;
+    }
+    .title--small {
+        font-size: 18px;
+    }
+    .leading__title {
+        margin-top: 24px;
+        margin-bottom: 21px;
+        font-size: 48px;
+        line-height: 48px;
+    }
+}
+@media (max-width: 1310px) {
+    .leading__info {
+        width: 60%;
+    }
+    .block__wrapper {
+        margin-left: 65px;
+    }
+}
+@media (max-width: 1100px) {
+    .leading__info {
+        width: 75%;
+    }
+}
+@media (max-width: 880px) {
+    .leading__info {
+        padding-top: 4.5rem;
+        padding-bottom: 5rem;
+    }
+    .leading__title {
+        font-size: 38px;
+        line-height: 38px;
+    }
+}
+@media (max-width: 600px) {
+    .leading__info {
+        padding-top: 3.5rem;
+        padding-bottom: 5rem;
+        width: 95%;
+    }
+    .title--small {
+        font-size: 15px;
+    }
+    .leading__title {
+        font-size: 32px;
+        line-height: 34px;
+    }
+}
+@media (max-width: 545px) {
+    .leading__info {
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
+        padding-left: 5rem;
+    }
+    .title--small {
+        font-size: 14px;
+    }
+    .leading__title {
+        font-size: 26px;
+        line-height: 28px;
+    }
+}
+
+//SVG 
+
+#bookmark-usage.leading__bookmark {
+    --stroke-color: #FFC830;
+}
+#bookmark-usage:hover {
+    --stroke-color: #EEB20B;
+}
+#bookmark path {
+    stroke: var(--stroke-color);
+}

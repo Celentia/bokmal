@@ -1,0 +1,85 @@
+.sidebar {
+    display: flex;
+    min-width: 62px;
+    //border-top: 2px solid $border-color;
+    background: white;
+    z-index: 1;
+
+    &__label {
+        width: 100%;
+        min-width: 62px;
+    }
+    &__item {
+        width: 100%;
+        padding: 32px 15px;
+        border-top: 1.5px solid #EBECF0;
+        border-right: 2px solid $border-color;
+    }
+    &__nav {
+        display: none;
+        flex-direction: column;
+        z-index: 1;
+        margin-top: 0.01px;
+        padding-top: 15rem;
+        padding-left: 12.3rem;
+        border-top: 1.5px solid #EBECF0;
+        background-color: #fff;
+    }
+    &__icon {
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
+.nav {
+    &__list {
+        width: 350px;
+        padding: 0;
+        list-style: none;
+    }
+    &__item {
+        margin-bottom: 24px;
+    }
+    &__item--last {
+        margin-bottom: 0;
+    }
+    &__link {
+        color: $font-color;
+        font-family: $font-semibold;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration: none;
+        text-transform: uppercase; 
+    }
+}
+#sidebar__hide {
+    display: none;
+}
+.sidebar__label {
+    display: flex;
+}
+.sidebar__close--hidden {
+    display: none;
+}
+#sidebar__hide:checked ~ .sidebar__label > .sidebar__item > .sidebar__close--hidden {
+    display: block;
+}
+#sidebar__hide:checked ~ .sidebar__label > .sidebar__item > .sidebar__burger {
+    display: none;
+}
+#sidebar__hide:checked ~ .sidebar__nav  {
+    display: none;
+}
+#sidebar__hide:checked ~ .sidebar__nav {
+    display: flex;
+}
+
+@media (max-width: 568px) {
+    .sidebar__nav {
+        padding-top: 8rem;
+        padding-left: 3.3rem;    
+    }
+    .nav__list {
+        width: 100vw;
+    }
+}

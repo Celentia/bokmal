@@ -1,0 +1,86 @@
+.subthemes {
+    &--colored {
+        background-color: #F7F7F9;
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+    }
+    &__title--main {
+        width: 100%;
+        margin-top: 0;
+        color: #BDBCBE;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 22px;
+        text-transform: uppercase;
+    }
+    &__item {
+        width: 30%;
+    }
+    &__image {
+        width: 100%;
+    }
+    &__date::before {
+        content: url(../images/calendar.svg);
+    }
+    &__views::before {
+        content: url(../images/eye.svg);
+    }
+    &__date, &__views {
+        margin-top: 10px;
+    }
+    &__text {
+        color: $font-color;
+        font-family: $font-semibold;
+        font-size: 18px;
+        line-height: 22px;
+        hyphens: auto;
+    }
+    &__image-bookmark {
+        position: relative;
+    }
+    &__bookmark {
+        position: absolute;
+        right: 20px;
+        bottom: -14px;
+    }
+    &__title {
+        width: 100%;
+        margin-top: 2rem;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+        color: #837F89;
+    }
+}
+@media (max-width: 800px) {
+    .subthemes__item {
+        width: 48%;
+    }
+}
+@media (max-width: 600px) {
+    .subthemes__wrapper {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 540px) {
+    .subthemes__item {
+        width: 100%;
+    }
+    .subthemes__text {
+        margin: 7px 0;
+    }
+    .subthemes__title--main {
+        font-size: 16px;
+    }
+}
+@media (max-width: 400px) {
+    .subthemes__title {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

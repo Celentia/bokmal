@@ -1,0 +1,35 @@
+.search {
+    &__wrapper {
+        margin-top: 3%;
+    }
+    &__input {
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px solid #2B292D;
+        padding: 17px 0;
+        font-family: $font-semibold;
+        font-size: 16px;
+        color: $font-color;
+    }
+}
+@media (max-width: 400px) {
+    .search__input {
+        padding: 9px 0;
+    }
+}
+
+//SVG
+
+#bookmark-usage.subthemes__bookmark {
+    --stroke-color: #FFC830;
+}
+#bookmark-usage:hover {
+    --stroke-color: #EEB20B;
+}
+#bookmark path {
+    stroke: var(--stroke-color);
+}
+#bookmark_path-1 {
+    fill: transparent;
+}

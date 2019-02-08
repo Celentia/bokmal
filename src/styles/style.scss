@@ -1,0 +1,100 @@
+@import "variables.scss";
+@import "common.scss";
+@import "header.scss";
+@import "tabs.scss";
+@import "search.scss";
+@import "leading.scss";
+@import "sidebar.scss";
+@import "sort.scss";
+@import "article.scss";
+@import "subthemes.scss";
+@import "advice.scss";
+@import "article2.scss";
+@import "more.scss";
+@import "footer.scss";
+@import "babypage.scss";
+
+.container {
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "sidebar content"
+    "sidebar content"
+    "sidebar content"
+    "sidebar content"
+    "sidebar content"
+    "sidebar content"
+    "sidebar content"
+    "sidebar content"
+    "sidebar content"
+    "footer footer";
+    -ms-grid-columns: 3.95% 1fr;
+    grid-template-columns: 3.95% 1fr;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.leading .content {
+    grid-area: content;
+}
+.footer {
+    grid-area: footer;
+}
+.header {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    -ms-grid-row: 1;
+}
+.sidebar {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+}
+.leading {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+}
+.search {
+    -ms-grid-column: 2;
+    -ms-grid-row: 4;
+}
+.sort {
+    -ms-grid-column: 2;
+    -ms-grid-row: 6;
+}
+.article--first {
+    -ms-grid-column: 2;
+    -ms-grid-row: 7;
+}
+.subthemes--second {
+    -ms-grid-column: 2;
+    -ms-grid-row: 8;
+}
+.advice {
+    -ms-grid-column: 2;
+    -ms-grid-row: 9;
+}
+.subthemes--third {
+    -ms-grid-column: 2;
+    -ms-grid-row: 10;
+}
+.article--second {
+    -ms-grid-column: 2;
+    -ms-grid-row: 11;
+}
+.subthemes--fourth {
+    -ms-grid-column: 2;
+    -ms-grid-row: 12;
+}
+.more {
+    -ms-grid-column: 2;
+    -ms-grid-row: 13;
+}
+.footer {
+    -ms-grid-column: 2;
+    -ms-grid-row: 14;
+}
+path {
+    stroke: #FFC830;
+    
+}

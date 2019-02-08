@@ -1,0 +1,131 @@
+.advice { 
+    &__background {
+        background: url(../images/advice.png) no-repeat;
+        background-size: cover;
+    }
+    &__background--underlined {
+        border-bottom: 4px solid #F94F4C;
+    }
+    &__title--small {
+        margin-top: 0;
+        margin-left: 65px;
+    }
+    &__info {
+        display: inline-block;
+        position: relative;
+        width: 56.5%;
+        margin-top: 6.5rem;
+        margin-bottom: 6.5rem;
+        margin-left: 3rem;
+        padding: 31px;
+        background-color: #fff; 
+    }
+    &__title {
+        position: relative;
+        font-family: $font-extrabold;
+        font-size: 32px;
+        line-height: 39px;
+        color: $font-color; 
+        hyphens: auto;
+    }
+    &__title::before {
+        content: '';
+        background: red;
+        height: 4px;
+        width: 33px;
+        position: absolute;
+        transform: translateX(-138%);
+        top: 5px;
+    }
+    &__date::before {
+        content: url(../images/calendar.svg);
+    }
+    &__views::before {
+        content: url(../images/eye.svg);
+    }
+    &__bookmark {
+        position: absolute;
+        right: 1%;
+        bottom: -8%;
+    }
+}
+
+//SVG
+
+#bookmark-usage.advice__bookmark {
+    --stroke-color: #FFC830;
+}
+#bookmark-usage:hover {
+    --stroke-color: #EEB20B;
+}
+#bookmark path {
+    stroke: var(--stroke-color);
+}
+#bookmark_path-1 {
+    fill: transparent;
+}
+
+@media (min-width: 1601px) {
+    .advice__title {
+        font-size: 44px;
+        line-height: 49px;
+    }
+}
+@media(max-width: 1240px) {
+    .advice__info {
+        width: 585px;
+    }
+}
+@media(max-width: 850px) {
+    .advice__background {
+        background: #67C0EB;
+    }
+    .advice__info {
+        width: 80%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+}
+@media(max-width: 650px) {
+    .advice__info {
+        width: 83%;
+    }
+    .advice__title {
+        font-size: 30px;
+        line-height: 35px;
+        margin: 15px 0;
+    }
+}
+@media(max-width: 600px) {
+    .advice__background {
+        background: transparent;
+        margin: 0;
+        border: 0;
+    }
+    .advice__info {
+        border: 1px solid #E3E3E5;
+        margin-top: 0;
+        margin-left: 65px;
+        margin-bottom: 3rem;
+        padding: 16px 20px;
+    }
+    .advice__title {
+        font-size: 27px;
+        line-height: 30px;
+    }
+    .advice__title::before {
+        transform: translateX(-115%);  
+    }
+}
+@media(max-width: 444px) {
+    .advice__info {
+        width: 75%;
+    }
+    .advice__title {
+        font-size: 22px;
+        line-height: 23px;
+    }
+    .date {
+        padding-right: 5px;
+    }
+}

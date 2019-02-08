@@ -1,0 +1,63 @@
+:root {
+    font-family: $font-regular;
+    font-size: $font-size;
+}
+
+.button {
+    height: 29px;
+    width: 83px;
+    background-color: $button-color;
+    font-family: $font-semibold;
+    border-radius: 100px;
+    border: 0;
+    outline: none;
+    transition: all .3s;
+    cursor: pointer;
+}
+.button:hover {
+    box-shadow: 0px 3px 4px 0px rgba(110,81,0,0.3);
+    background-color: #EEB20B;
+}
+.title--small {
+	color: $title--small-color;
+	font-family: $font-semibold;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+.stats {
+    display: flex;
+    align-items: center;
+}
+.date, .views {
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 0.15px;
+    line-height: 15px;
+}
+.date {
+    padding-right: 10px;
+}
+.date::before , .views::before {
+    padding-right: 5px;
+}
+
+.inline-svg-icon{
+    display: inline-block;
+    width: 22px;
+    height: 28px;
+}
+
+@media (min-width: 1580px) {
+    :root {
+        font-size: 16px;
+    }
+    .date, .views {
+        font-size: 14px;
+    }
+    .button {
+        height: 33px;
+        width: 93px;
+        font-size: 16px;
+    }
+}

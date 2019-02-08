@@ -1,0 +1,37 @@
+.more {
+    display: flex;
+    justify-content: center;
+    &__wrapper {
+        margin-top: -3rem;
+        margin-bottom: 4rem;
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        font-family: $font-semibold;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    &__text:hover {
+        color: $hover-color;
+    }
+    &__text::before {
+        content: url(../images/rotate-ccw.svg);
+        transition: all .3s;
+        padding-right: 16px;
+    }
+    &__text:hover::before {
+        transform: translateX(-50%) rotate(90deg);
+        padding-right: 0;
+    }
+}
+@media (max-width: 800px) {
+    .more__wrapper {
+        margin-top: -1rem;
+    }
+}
+@media (max-width: 600px) {
+    .more__wrapper {
+        margin-top: 0;
+    }
+}

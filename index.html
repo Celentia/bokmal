@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bokmal</title>
+    <link rel="stylesheet" type="text/css" href="src/styles/fonts.css">
+    <link rel="stylesheet" type="text/css" href="src/styles/normalize.css">
+    <link rel="stylesheet"  type="text/css" href="dist/style.css">
+</head>
+<body>    
+    <div class="container">
+        <input type="checkbox" id="hide-search">
+        <input type="checkbox" id="hide-tabs">
+        <header class="header">
+            <picture class="header__logo">
+                <source media="" srcset="">
+                <img src="src/images/bokmal_logo.svg" alt="logo">
+            </picture>
+            <div class="header__info">
+                <label for="hide-tabs" class="label-tabs">Для усіх</label>
+                <ul class="header__links">
+                    <li class="links__item">
+                        <a href="" class="links__link">Про Букмоль</a> 
+                    </li>
+                    <li class="links__item">
+                        <a href="" class="links__link">Співпраця</a>
+                    </li>
+                    <li class="links__item">
+                        <a href="" class="links__link">Підтримка</a>
+                    </li>
+                </ul>
+                <select class="header__select select-link">
+                    <option value=""><a href="">Інформація</a></option>
+                    <option value=""><a href="">Про Букмоль</a></option>
+                    <option value=""><a href="">Співпраця</a></option>
+                    <option value=""><a href="">Підтримка</a></option>
+                </select>
+            </div>
+            <div class="header__other">   
+                <label for="hide-search" class="header__label"> 
+                    <img src="src/images/search.svg" alt="logo" class="header__icon icon icon--search">
+                </label> 
+                <input type="checkbox" id="hide">
+                <label for="hide" class="header__label">
+                    <svg class="icon-box header__icon icon icon--bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="20px">
+                        <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage header__icon icon icon--bookmark" />
+                    </svg> 
+                    <img src="src/images/bookmark_filled.svg" alt="logo" class="header__icon icon icon--bookmark icon--hidden">
+                    <span class="header__count hide">19</span>
+                </label>    
+                <label for="hide-search" class="header__label header__label--close"> 
+                    <img src="src/images/x_black.svg" alt="logo" class="header__icon icon icon--close">      
+                </label>  
+            </div> 
+        </header>
+
+        <section class="tabs hide">
+            <ul class="tabs__list">
+                <li class="tabs__item">
+                    <a href="" class="tabs__link tabs__link--active">Для усіх</a>
+                </li>
+                <li class="tabs__item">
+                    <a href="baby.html" class="tabs__link">Baby side</a>
+                </li>
+                <li class="tabs__item tabs__item--last">
+                    <a href="" class="tabs__link">Teen side</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="search hide">
+            <div class="block__wrapper search__wrapper">
+            <form action="" class="search__form">
+                <input type="text" class="search__input" autofocus>
+            </form>
+        </div>
+            <section class="subthemes block content subthemes--first">
+                <div class="block__wrapper subthemes__wrapper">
+                    <h3 class="subthemes__title">Найпопулярніші матеріали</h3>
+                    <div class="subthemes__item">
+                        <h3 class="subthemes__title--small title--small">Фільми</h3>
+                        <div class="subthemes__image-bookmark">
+                            <picture>
+                                <source media="" srcset="">
+                                <img src="src/images/article4.PNG" alt="article-image" class="subthemes__image">
+                            </picture>
+                            <svg class="icon-box subthemes__bookmark bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                                <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage subthemes__bookmark" />
+                            </svg> 
+                        </div>
+                        <div class="subthemes__stats stats">
+                            <div class="subthemes__date date"><time>28 вересня, 2017</time></div> 
+                            <div class="subthemes__views views">6345</div>
+                        </div>
+                        <h3 class="subthemes__text">12 фільмів для дітей, знятих за мотивами відомих книжок</h3>
+                    </div>
+                    <div class="subthemes__item">
+                        <h3 class="subthemes__title--small title--small">Книжки</h3>
+                        <div class="subthemes__image-bookmark">
+                            <picture>
+                                <source media="" srcset="">
+                                <img src="src/images/subtheme.png" alt="article-image" class="subthemes__image">
+                            </picture>
+                            <svg class="icon-box subthemes__bookmark bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                                <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage subthemes__bookmark" />
+                            </svg> 
+                        </div>
+                        <div class="subthemes__stats stats">
+                            <div class="subthemes__date date"><time>28 вересня, 2017</time></div> 
+                            <div class="subthemes__views views">6345</div>
+                        </div>
+                        <h3 class="subthemes__text">"Марійчині пригоди": про звичайне життя без співчуття</h3>
+                    </div>
+                    <div class="subthemes__item">
+                        <h3 class="subthemes__title--small title--small">Книжки</h3>
+                        <div class="subthemes__image-bookmark">
+                            <picture>
+                                <source media="" srcset="">
+                                <img src="src/images/article8.PNG" alt="article-image" class="subthemes__image">
+                            </picture>
+                            <svg class="icon-box subthemes__bookmark bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                                <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage subthemes__bookmark" />
+                            </svg> 
+                        </div>
+                        <div class="subthemes__stats stats">
+                            <div class="subthemes__date date"><time>28 вересня, 2017</time></div> 
+                            <div class="subthemes__views views">6345</div>
+                        </div>
+                        <h3 class="subthemes__text">Як наздогнати час: "Основи" презентують унікальне ілюстроване видання для дітей</h3>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="leading">
+            <div class="leading__info">
+                <h3 class="leading__title--small title--small">Корисні статті</h3>  
+                <h1 class="leading__title">Тварини Патріка Джорджа: врятуй їх усіх</h1> 
+                <div class="leading__stats stats">
+                    <span class="leading__date date"><time>1 жовтня, 2017</time></span> 
+                    <span class="leading__views views">980</span>
+                </div>
+                <div class="leading__other">
+                    <button class="leading__button button">Читати</button>
+                    <svg class="icon-box" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                        <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage leading__bookmark bookmark"/>
+                    </svg> 
+                </div>
+            </div>
+        </section>
+        
+        <section class="sidebar">
+                <input type="checkbox" id="sidebar__hide">
+                <label for="sidebar__hide" class="sidebar__label">
+                <div class="sidebar__item">
+                    <img src="src/images/burger.svg" alt="menu" class="sidebar__burger sidebar__icon">
+                    <img src="src/images/x_black.svg" alt="menu-close" class="sidebar__close sidebar__close--hidden sidebar__icon">
+                </div>
+        </label> 
+            <nav class="sidebar__nav nav nav--hidden">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link nav__link--active">Головна</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Топ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Огляди</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Корисні статті</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Новини</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Авторська колонка</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Інтерактив</a>
+                    </li>
+                    <li class="nav__item nav__item--last">
+                        <a href="#" class="nav__link">Літклуб</a>
+                    </li>    
+                </ul>
+            </nav>
+        </section>
+
+        <section class="sort block content">
+            <div class="block__wrapper sort__wrapper">
+                <ul class="sort__list">
+                    <li class="sort__item">Сортувати за:</li>
+                    <li class="sort__item">
+                        <a href="#" class="sort__link">Популярністю</a>
+                    </li>
+                    <li class="sort__item">
+                        <a href="#" class="sort__link">Новизною</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="article block content article--first">
+            <div class="block__wrapper">
+                <picture class="article__picture">
+                    <source media="" srcset="">
+                    <img src="dist/images/story.png" alt="article-image" class="article__image">
+                </picture>
+                <div class="article__info article__wrapper--right">
+                    <h3 class="article__title--small title--small">Огляди</h3>
+                    <div class="article__stats stats">
+                        <div class="article__date date"><time>Сьогодні</time></div>
+                        <div class="article__views views">32</div>
+                    </div>
+                    <h2 class="article__title">Шість пригодницьких історій для літнього читання</h2>
+                    <button class="article__button button">Читати</button>
+                    <svg class="icon-box article__bookmark bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                        <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage article__bookmark" />
+                    </svg> 
+                </div>
+            </div>
+        </section>
+
+        <section class="subthemes block content subthemes--second">
+            <div class="block__wrapper subthemes__wrapper">
+                <div class="subthemes__item">
+                    <h3 class="subthemes__title--small title--small">Корисні статті</h3>
+                    <div class="subthemes__image-bookmark">
+                        <picture>
+                            <source media="" srcset="">
+                            <img src="src/images/article6.PNG" alt="article-image" class="subthemes__image">
+                        </picture>
+                        <svg class="icon-box subthemes__bookmark bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                            <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage subthemes__bookmark" />
+                        </svg> 
+                    </div>
+                    <div class="subthemes__stats stats">
+                        <div class="subthemes__date date"><time>1 жовтня, 2017</time></div> 
+                        <div class="subthemes__views views">980</div>
+                    </div>
+                    <h3 class="subthemes__text">Найкращі дитячі ілюстратори незалежної України</h3>
+                </div>
+                <div class="subthemes__item">
+                    <h3 class="subthemes__title--small title--small">Афіша</h3>
+                    <div class="subthemes__image-bookmark">
+                        <picture>
+                            <source media="" srcset="">
+                            <img src="src/images/subtheme.png" alt="article-image" class="subthemes__image">
+                        </picture>
+                        <svg class="icon-box subthemes__bookmark bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                            <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage subthemes__bookmark" />
+                        </svg> 
+                    </div>
+                    <div class="subthemes__stats stats">
+                        <div class="subthemes__date date"><time>22 вересня, 2017</time></div> 
+                        <div class="subthemes__views views">145</div>
+                    </div>
+                    <h3 class="subthemes__text">Вихідні з дітьми: 9-10 вересня</h3>
+                </div>
+                <div class="subthemes__item">
+                    <h3 class="subthemes__title--small title--small">Літклуб</h3>
+                    <div class="subthemes__image-bookmark">
+                        <picture>
+                            <source media="" srcset="">
+                            <img src="src/images/article8.PNG" alt="article-image" class="subthemes__image">
+                        </picture>
+                        <svg class="icon-box subthemes__bookmark bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                            <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage subthemes__bookmark" />
+                        </svg> 
+                    </div>
+                    <div class="subthemes__stats stats">
+                        <div class="subthemes__date date"><time>28 вересня, 2017</time></div> 
+                        <div class="subthemes__views views">2045</div>
+                    </div>
+                    <h3 class="subthemes__text">Літклуб букмоль: розклад на квітень</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="advice block content">
+            <h3 class="advice__title--small title--small">Поради</h3>
+            <div class="block__wrapper advice__background advice__background--underlined">
+                <div class="advice__info">
+                    <div class="advice__stats stats">
+                        <div class="advice__date date"><time>28 вересня, 2017</time></div> 
+                        <div class="advice__views views">2045</div>
+                    </div>
+                    <h1 class="advice__title">«Любий щоденнику...» ваш «настільний» психоаналітик</h1>               
+                    <button class="advice__button button">Читати</button>
+                    <svg class="icon-box advice__bookmark bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                        <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage advice__bookmark" />
+                    </svg> 
+                </div>
+            </div>
+        </section>
+
+        <section class="subthemes block subthemes--colored content subthemes--third">
+            <div class="block__wrapper subthemes__wrapper">
+                <h2 class="subthemes__title--main">Teen review</h2>
+                <div class="subthemes__item">
+                    <h3 class="subthemes__title--small title--small">Огляди</h3>
+                    <div class="subthemes__image-bookmark">
+                        <picture>
+                            <source media="" srcset="">
+                            <img src="src/images/article9.PNG" alt="article-image" class="subthemes__image">
+                        </picture>
+                        <svg class="icon-box subthemes__bookmark bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                            <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage subthemes__bookmark" />
+                        </svg> 
+                    </div>
+                    <div class="subthemes__stats stats">
+                        <div class="subthemes__date date"><time>28 вересня, 2017</time></div> 
+                        <div class="subthemes__views views">2045</div>
+                    </div>
+                    <h3 class="subthemes__text">«Поміж сірих сутінків» Рути Шепетіс: на противагу зброї</h3>
+                </div>
+                <div class="subthemes__item">
+                    <h3 class="subthemes__title--small title--small">Новини</h3>
+                    <div class="subthemes__image-bookmark">
+                        <picture>
+                            <source media="" srcset="">
+                            <img src="src/images/article10.PNG" alt="article-image" class="subthemes__image">
+                        </picture>
+                        <svg class="icon-box subthemes__bookmark bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                            <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage subthemes__bookmark" />
+                        </svg> 
+                    </div>
+                    <div class="subthemes__stats stats">
+                        <div class="subthemes__date date"><time>8 листопада, 2017</time></div> 
+                        <div class="subthemes__views views">3045</div>
+                    </div>
+                    <h3 class="subthemes__text">У столиці запустили соціальний проект "Київ читає"</h3>
+                </div>
+                <div class="subthemes__item">
+                    <h3 class="subthemes__title--small title--small">Фільми</h3>
+                    <div class="subthemes__image-bookmark">
+                        <picture>
+                            <source media="" srcset="">
+                            <img src="src/images/article4.PNG" alt="article-image" class="subthemes__image">
+                        </picture>
+                        <svg class="icon-box subthemes__bookmark bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                            <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage subthemes__bookmark" />
+                        </svg> 
+                    </div>
+                    <div class="subthemes__stats stats">
+                        <div class="subthemes__date date"><time>28 вересня, 2017</time></div> 
+                        <div class="subthemes__views views">6345</div>
+                    </div>
+                    <h3 class="subthemes__text">12 фільмів для дітей, знятих за мотивами відомих книжок</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="article block content article--second">
+            <div class="block__wrapper article__wrapper--left">
+                <picture class="article__picture--left">
+                    <source media="" srcset="">
+                    <img src="src/images/section3_Bg.PNG" alt="article-image" class="article__image article__image--right">
+                </picture>
+                <div class="article__info article__info--left">
+                    <h3 class="article__title--small title-left--small title--small">Авторська колонка</h3>
+                    <div class="article__stats article__stats--left stats">
+                        <div class="article__date date"><time>22 вересня, 2017</time></div>
+                        <div class="article__views views">3045</div>
+                    </div>
+                    <h2 class="article__title article__title--left">Бути собою разом із Туве Янссон: 5 диваків Долини мумі-тролів</h2>
+                    <button class="article__button button">Читати</button>
+                    <svg class="icon-box article__bookmark article__bookmark--left bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                        <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage article__bookmark" />
+                    </svg> 
+                </div>
+            </div>
+        </section>
+
+        <section class="subthemes block content subthemes--fourth">
+            <div class="block__wrapper subthemes__wrapper">
+                <div class="subthemes__item">
+                    <h3 class="subthemes__title--small title--small">Огляди</h3>
+                    <div class="subthemes__image-bookmark">
+                        <picture>
+                            <source media="" srcset="">
+                            <img src="src/images/article1.PNG" alt="article-image" class="subthemes__image">
+                        </picture>
+                        <svg class="icon-box subthemes__bookmark bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                            <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage subthemes__bookmark" />
+                        </svg> 
+                    </div>
+                    <div class="subthemes__bookmark bookmark"></div>
+                    <div class="subthemes__stats stats">
+                        <div class="subthemes__date date"><time>15 вересня, 2017</time></div> 
+                        <div class="subthemes__views views">569</div>
+                    </div>
+                    <h3 class="subthemes__text">Альтернативна історія: 4 аніме серіали, які граються з подіями ХХ століття</h3>
+                </div>
+                <div class="subthemes__item">
+                    <h3 class="subthemes__title--small title--small">Афіша</h3>
+                    <div class="subthemes__image-bookmark">
+                        <picture>
+                            <source media="" srcset="">
+                            <img src="src/images/article11.PNG" alt="article-image" class="subthemes__image">
+                        </picture>
+                        <svg class="icon-box subthemes__bookmark bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                            <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage subthemes__bookmark" />
+                        </svg> 
+                    </div>
+                    <div class="subthemes__bookmark bookmark"></div>
+                    <div class="subthemes__stats stats">
+                        <div class="subthemes__date date"><time>28 вересня, 2017</time></div> 
+                        <div class="subthemes__views views">2045</div>
+                    </div>
+                    <h3 class="subthemes__text">Що робити на вихідних у Києві</h3>
+                </div>
+                <div class="subthemes__item">
+                    <h3 class="subthemes__title--small title--small">Корисні статті</h3>
+                    <div class="subthemes__image-bookmark">
+                        <picture>
+                            <source media="" srcset="">
+                            <img src="src/images/article3.PNG" alt="article-image" class="subthemes__image">
+                        </picture>
+                        <svg class="icon-box subthemes__bookmark bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                            <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage subthemes__bookmark" />
+                        </svg> 
+                    </div>
+                    <div class="subthemes__bookmark bookmark"></div>
+                    <div class="subthemes__stats stats">
+                        <div class="subthemes__date date"><time>28 вересня, 2017</time></div> 
+                        <div class="subthemes__views views">2045</div>
+                    </div>
+                    
+                    <h3 class="subthemes__text">Як вивчають літературу там: досвід Швеції</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="more content">
+            <div class="more__wrapper">
+                <h2 class="more__text">Показати ще</h2>
+            </div>
+        </section>
+
+        <footer class="footer block">
+            <div class="block__wrapper footer__wrapper">
+                <div class="footer__item footer__item--first">
+                    <h3 class="footer__title">Підписуйтесь на новини від Bokmal</h3>
+                    <form class="footer__form">
+                        <input type="text" placeholder="E-Mail" class="form__subscribe">
+                        <span class="form__button">
+                            <button class="form__submit"><img src="dist/images/arrow-right.svg"></button>
+                        </span>
+                    </form>
+                </div>
+                <div class="footer__item">
+                    <h3 class="footer__title">Ми є у соціальних мережах</h3>
+                    <div class="footer__social">
+                        <a href="#">
+                            <svg class="icon-box footer__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="facebook-usage" xlink:href="#facebook" class="sprite-symbol-usage footer__icon"/>
+                            </svg> 
+                        </a>
+                        <a href="#">
+                            <svg class="icon-box footer__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="twitter-usage" xlink:href="#twitter" class="sprite-symbol-usage footer__icon"/>
+                            </svg> 
+                        </a>
+                        <a href="#">
+                            <svg class="icon-box footer__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px">
+                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="instagram-usage" xlink:href="#instagram" class="sprite-symbol-usage footer__icon"/>
+                            </svg> 
+                        </a>    
+                    </div>
+                </div>
+                <div class="footer__item footer__item--last">
+                    <div class="footer__text">
+                        &copy; 2017 Букмоль. Незалежний культурний проект для дітей, 
+                        їхніх батьків та усіх-усіх небайдужих й охочих до читання.<br> 
+                        Всі права захищені. Використання будь-яких матеріалів, 
+                        розміщених на сайті, дозволяється за умови посилання на Bokmal.com.ua
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="hide"><defs>
+    <symbol viewBox="0 0 451.847 451.847" id="arrow-down">
+        <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+            c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+            c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z" />
+    </symbol>
+    <symbol viewBox="0 0 16 20" id="bookmark">
+            <defs>
+                    <rect id="bookmark_path-1" x="0" y="0" width="1368" height="51" />
+                </defs>
+                <g id="bookmark_Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="bookmark_header-V2" transform="translate(-1333.000000, -17.000000)">
+                        <g>
+                            <mask id="bookmark_mask-2" fill="white">
+                                <use xlink:href="#bookmark_path-1" />
+                            </mask>
+                            <g id="bookmark_Rectangle-2">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#bookmark_path-1" />
+                                <rect stroke="#F1EFF3" stroke-width="1" x="0.5" y="0.5" width="1367" height="50" />
+                            </g>
+                            <!-- <g id="bookmark_bookmark" mask="url(#bookmark_mask-2)" stroke-linecap="round" stroke-linejoin="round"> -->
+                                <g transform="translate(1335.000000, 18.000000)">
+                                   <g> -->
+                                        <path d="M12,15.4285714 L6,11.1428571 L0,15.4285714 L0,1.71428571 C0,0.767511857 0.767511857,0 1.71428571,0 L10.2857143,0 C11.2324881,0 12,0.767511857 12,1.71428571 L12,15.4285714 Z" id="bookmark_Shape" stroke="#2B292D" stroke-width="2" />
+                                    <!-- </g> -->
+                                </g>
+                            </g>
+                        <!-- </g> -->
+                    </g>
+                </g>
+    </symbol>
+    <symbol viewBox="0 0 16 20" id="bookmark_filled">
+        <path d="M12,15.4285714 L6,11.1428571 L0,15.4285714 L0,1.71428571 C0,0.767511857 0.767511857,0 1.71428571,0 L10.2857143,0 C11.2324881,0 12,0.767511857 12,1.71428571 L12,15.4285714 Z" id="bookmark_filled_Shape" stroke="#2B292D" fill="#2B292D" stroke-width="2" />
+    </symbol>
+    <symbol viewBox="0 0 24 19" id="burger">
+        <path d="M0,1 L18.9706526,1" id="burger_Path-2" />
+        <path d="M0,6 L16.128439,6" id="burger_Path-2-Copy" />
+        <path d="M0,11 L19.9144287,11" id="burger_Path-2-Copy-2" />
+        <path d="M0,16 L15.191553,16" id="burger_Path-2-Copy-3" />
+    </symbol>
+    <symbol viewBox="0 0 18 20" id="calendar-for-hero">
+        <rect id="calendar-for-hero_Rectangle-path" x="0" y="1.55555556" width="14" height="14" rx="2" />
+        <path d="M10.1111111,0 L10.1111111,3.11111111" id="calendar-for-hero_Shape" />
+        <path d="M3.88888889,0 L3.88888889,3.11111111" id="calendar-for-hero_Shape" />
+        <path d="M0,6.22222222 L14,6.22222222" id="calendar-for-hero_Shape" />
+    </symbol>
+    <symbol viewBox="0 0 23 18" id="eye-for-hero">
+        <path d="M0,6.90909091 C0,6.90909091 3.45454545,0 9.5,0 C15.5454545,0 19,6.90909091 19,6.90909091 C19,6.90909091 15.5454545,13.8181818 9.5,13.8181818 C3.45454545,13.8181818 0,6.90909091 0,6.90909091 Z" id="eye-for-hero_Shape" />
+        <circle id="eye-for-hero_Oval" cx="9.5" cy="6.90909091" r="2.59090909" />
+    </symbol>
+    <symbol viewBox="0 0 20 20" id="search">
+        <circle id="search_Oval" cx="6.66666667" cy="6.66666667" r="6.66666667" />
+        <path d="M16,16 L11.3777778,11.3777778" id="search_Shape" />
+    </symbol>
+    <symbol viewBox="0 0 26 27" id="facebook">
+        <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+        <defs></defs>
+        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="footer" transform="translate(-562.000000, -80.000000)" fill="#2B292D">
+                <g id="social">
+                    <g transform="translate(561.489982, 32.000000)">
+                        <g id="social_icons" transform="translate(0.000000, 48.000000)">
+                            <path d="M3.25095072,25.5555556 C2.55986729,25.5555556 2,24.9486197 2,24.2001926 L2,2.35526765 C2,1.60664996 2.55995523,1 3.25095072,1 L23.41444,1 C24.1052596,1 24.6653028,1.60664996 24.6653028,2.35526765 L24.6653028,24.2001926 C24.6653028,24.948715 24.1051717,25.5555556 23.41444,25.5555556 L17.6387309,25.5555556 L17.6387309,16.0462912 L20.58485,16.0462912 L21.0259896,12.3403621 L17.6387309,12.3403621 L17.6387309,9.97436053 C17.6387309,8.90140855 17.9137395,8.17022718 19.3338993,8.17022718 L21.145245,8.16936965 L21.145245,4.85475697 C20.8319796,4.80959408 19.756746,4.7086922 18.5057952,4.7086922 C15.8942245,4.7086922 14.1062726,6.43574375 14.1062726,9.60734064 L14.1062726,12.3403621 L11.1525901,12.3403621 L11.1525901,16.0462912 L14.1062726,16.0462912 L14.1062726,25.5555556 L3.25095072,25.5555556 Z" id="Facebook"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 26 23" id="twitter">
+        <defs></defs>
+        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="footer" transform="translate(-617.000000, -83.000000)" fill="#2B292D">
+                <g id="social">
+                    <g transform="translate(561.489982, 32.000000)">
+                        <g id="social_icons" transform="translate(0.000000, 48.000000)">
+                            <path d="M81.3285599,6.40485534 C80.3916555,6.84102564 79.3829118,7.13598973 78.3247787,7.26778219 C79.4053616,6.58999238 80.234507,5.51525621 80.6251333,4.23498656 C79.6133963,4.86256972 78.495397,5.31913647 77.3010685,5.5638939 C76.3491976,4.49857149 74.9887406,3.83333333 73.4831084,3.83333333 C70.596066,3.83333333 68.2538052,6.28875246 68.2538052,9.31684122 C68.2538052,9.74673568 68.2987047,10.1640785 68.3885039,10.5657317 C64.0407289,10.3366639 60.1868491,8.15581237 57.6051239,4.83432848 C57.1546315,5.64704867 56.8972073,6.58999238 56.8972073,7.59412544 C56.8972073,9.49570242 57.8206418,11.1744874 59.2245017,12.158224 C58.3684165,12.1315517 57.5602243,11.8820874 56.8538044,11.4741583 L56.8538044,11.5416235 C56.8538044,14.1994382 58.6572704,16.4163757 61.0519142,16.9184423 C60.613395,17.0470968 60.1509295,17.1114241 59.6734974,17.1114241 C59.3367506,17.1114241 59.0074871,17.078476 58.6887001,17.0141487 C59.3547104,19.1918623 61.2853919,20.7780787 63.57527,20.8204406 C61.7852738,22.2921231 59.5283221,23.1691706 57.0783022,23.1691706 C56.6562463,23.1691706 56.2386803,23.1440673 55.8300942,23.0938606 C58.1454153,24.6471289 60.8962623,25.5555556 63.8491574,25.5555556 C73.4726318,25.5555556 78.7333647,17.2008547 78.7333647,9.95383813 C78.7333647,9.71535653 78.7288748,9.47687492 78.7198949,9.2431002 C79.7421084,8.46960395 80.6296232,7.50469484 81.3285599,6.40485534" id="Twitter"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol> 
+    <symbol viewBox="0 0 26 27" id="instagram">
+        <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+        <title>Instagram-color</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="footer" transform="translate(-674.000000, -80.000000)" fill="#2B292D">
+                <g id="social">
+                    <g transform="translate(561.489982, 32.000000)">
+                        <g id="social_icons" transform="translate(0.000000, 48.000000)">
+                            <path d="M125.714802,1 C129.049022,1 129.467109,1.01413365 130.776585,1.07388486 C132.083333,1.13348986 132.975795,1.34105954 133.756705,1.6445918 C134.564029,1.95831004 135.24869,2.37812811 135.931255,3.06068581 C136.613772,3.74329225 137.033565,4.42799437 137.347313,5.2353668 C137.650778,6.01632393 137.858335,6.90883941 137.917937,8.2156657 C137.977684,9.52522125 137.991817,9.94333353 137.991817,13.2778021 C137.991817,16.612222 137.977684,17.0303343 137.917937,18.3398899 C137.858335,19.6467161 137.650778,20.5392316 137.347313,21.3201888 C137.033565,22.1275612 136.613772,22.8122633 135.931255,23.4948697 C135.24869,24.1774274 134.564029,24.5972455 133.756705,24.9110125 C132.975795,25.214496 132.083333,25.4220657 130.776585,25.4816707 C129.467109,25.5414219 129.049022,25.5555556 125.714802,25.5555556 C122.380534,25.5555556 121.962447,25.5414219 120.65297,25.4816707 C119.346223,25.4220657 118.453761,25.214496 117.672851,24.9110125 C116.865527,24.5972455 116.180866,24.1774274 115.498301,23.4948697 C114.815784,22.8122633 114.395991,22.1275612 114.082292,21.3201888 C113.778778,20.5392316 113.571221,19.6467161 113.511619,18.3398899 C113.451872,17.0303343 113.437739,16.612222 113.437739,13.2778021 C113.437739,9.94333353 113.451872,9.52522125 113.511619,8.2156657 C113.571221,6.90883941 113.778778,6.01632393 114.082292,5.2353668 C114.395991,4.42799437 114.815784,3.74329225 115.498301,3.06068581 C116.180866,2.37812811 116.865527,1.95831004 117.672851,1.6445918 C118.453761,1.34105954 119.346223,1.13348986 120.65297,1.07388486 C121.962447,1.01413365 122.380534,1 125.714802,1 Z M125.714802,3.21220826 C122.436676,3.21220826 122.048365,3.2247336 120.753801,3.2838025 C119.556801,3.33838762 118.906741,3.5384031 118.474132,3.70654477 C117.901071,3.92927156 117.492097,4.19532529 117.062509,4.62498817 C116.632872,5.05460232 116.366834,5.46360084 116.144121,6.03669588 C115.975989,6.4693317 115.775986,7.11943076 115.721404,8.31650197 C115.662339,9.61114408 115.649814,9.99947823 115.649814,13.2778021 C115.649814,16.5560773 115.662339,16.9444115 115.721404,18.2390536 C115.775986,19.4361248 115.975989,20.0862239 116.144121,20.5188597 C116.366834,21.0919547 116.632921,21.5009532 117.062509,21.9305674 C117.492097,22.3602303 117.901071,22.626284 118.474132,22.8490108 C118.906741,23.0171525 119.556801,23.2171679 120.753801,23.2717531 C122.048219,23.330822 122.436432,23.3433473 125.714802,23.3433473 C128.993124,23.3433473 129.381386,23.330822 130.675755,23.2717531 C131.872754,23.2171679 132.522814,23.0171525 132.955424,22.8490108 C133.528485,22.626284 133.937459,22.3602303 134.367047,21.9305674 C134.796684,21.5009532 135.062722,21.0919547 135.285435,20.5188597 C135.453567,20.0862239 135.65357,19.4361248 135.708152,18.2390536 C135.767217,16.9444115 135.779742,16.5560773 135.779742,13.2778021 C135.779742,9.99947823 135.767217,9.61114408 135.708152,8.31650197 C135.65357,7.11943076 135.453567,6.4693317 135.285435,6.03669588 C135.062722,5.46360084 134.796684,5.05460232 134.367047,4.62498817 C133.937459,4.19532529 133.528485,3.92927156 132.955424,3.70654477 C132.522814,3.5384031 131.872754,3.33838762 130.675755,3.2838025 C129.381191,3.2247336 128.99288,3.21220826 125.714802,3.21220826 Z M125.714802,6.97297692 C129.196636,6.97297692 132.019199,9.79571002 132.019199,13.2778021 C132.019199,16.7598455 129.196636,19.5825786 125.714802,19.5825786 C122.23292,19.5825786 119.410356,16.7598455 119.410356,13.2778021 C119.410356,9.79571002 122.23292,6.97297692 125.714802,6.97297692 Z M125.714802,17.3703704 C127.974929,17.3703704 129.807124,15.5380648 129.807124,13.2778021 C129.807124,11.0174907 127.974929,9.18518519 125.714802,9.18518519 C123.454627,9.18518519 121.622432,11.0174907 121.622432,13.2778021 C121.622432,15.5380648 123.454627,17.3703704 125.714802,17.3703704 Z M133.741549,6.72388357 C133.741549,7.53759178 133.081937,8.19719449 132.268278,8.19719449 C131.454667,8.19719449 130.795055,7.53759178 130.795055,6.72388357 C130.795055,5.91017537 131.454667,5.25052392 132.268278,5.25052392 C133.081937,5.25052392 133.741549,5.91017537 133.741549,6.72388357 Z" id="Instagram"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol></defs>
+    <use id="arrow-down-usage" xlink:href="#arrow-down" class="sprite-symbol-usage" />
+    <use id="bookmark-usage" xlink:href="#bookmark" class="sprite-symbol-usage" />
+    <use id="bookmark_filled-usage" xlink:href="#bookmark_filled" class="sprite-symbol-usage" />
+    <use id="burger-usage" xlink:href="#burger" class="sprite-symbol-usage" />
+    <use id="calendar-for-hero-usage" xlink:href="#calendar-for-hero" class="sprite-symbol-usage" />
+    <use id="eye-for-hero-usage" xlink:href="#eye-for-hero" class="sprite-symbol-usage" />
+    <use id="search-usage" xlink:href="#search" class="sprite-symbol-usage" />
+    <use id="rotate-usage" xlink:href="#rotate-ccw" class="sprite-symbol-usage" />
+    <use id="facebook-usage" xlink:href="#facebook" class="sprite-symbol-usage" />
+    <use id="twitter-usage" xlink:href="#twitter" class="sprite-symbol-usage" />
+    <use id="instagram-usage" xlink:href="#instagram" class="sprite-symbol-usage" />
+    </svg>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+    <!-- <script type="text/javascript" src="src/js/svgxuse.min.js" defer></script>
+    <script type="text/javascript" src="src/js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script> -->
+</body>
+</html>
